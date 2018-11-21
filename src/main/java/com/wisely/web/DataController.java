@@ -42,7 +42,7 @@ public class DataController {
 	 */
 	@RequestMapping("/auto")
 	public Page<Person> AutoCloseable(Person person){
-		Page<Person> pagePeople = personRepository.findByAuto(person, PageRequest.of(0, 10));
+		Page<Person> pagePeople = personRepository.findByAuto(person, new PageRequest(0, 10));
 		return pagePeople;
 	}
 	
@@ -94,7 +94,7 @@ public class DataController {
 	@RequestMapping("/page")
 	public Page<Person> page(Integer page, Integer size) {
 		//new PageRequest()已过时，使用PageRequest.of()
-		Page<Person> pagePeople = personRepository.findAll(PageRequest.of(page, size));
+		Page<Person> pagePeople = personRepository.findAll(new PageRequest(page, size));
 		return pagePeople;
 	}
 }
