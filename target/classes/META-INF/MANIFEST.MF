@@ -3,7 +3,7 @@ Implementation-Title: ch7_7
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Mask
 Implementation-Vendor-Id: com.wisely
-Build-Jdk: 1.8.0_191
+Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
